@@ -1,0 +1,79 @@
+body {
+  background: #222;
+  color: #eee;
+  font: 12pt sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 14pt;
+  font-variant: small-caps;
+}
+
+#instructions {
+  display: inline-block;
+  width: 400px;
+  padding: 1em;
+}
+
+#grid {
+  flex: 0 0;
+  padding: 1em;
+  display: inline-grid;
+  grid-auto-rows: 40px;
+  grid-auto-columns: 40px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#grid .cell {
+  border-radius: 50%;
+  user-select: none;
+}
+
+#grid .goal {
+  margin: -5px;
+  border-radius: 50%;
+  border: 3px solid #fc0;
+  user-select: none;
+  z-index: -1;
+}
+
+#grid .cell.hole {
+  border: 2px solid #666;
+}
+
+#grid .cell.peg {
+  background-color: #fc0;
+  background: radial-gradient(farthest-corner at 20% 20%, #fe8, #fc0);
+  cursor: pointer;
+}
+
+#grid .cell.peg.dragged {
+  opacity: 75%;
+}
+
+#grid .cell.hole.droppable {
+  background: #fc06;
+  border-color: #fc0;
+}
+
+#grid .cell.hint {
+  border: 3px solid magenta !important;
+}
+
+a {
+  color: #acf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

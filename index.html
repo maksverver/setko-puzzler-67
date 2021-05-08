@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Setko Puzzler 67</title>
+  <link rel="stylesheet" href="index.css">
+ </head>
+ <body onload="initialize()">
+ <div id="grid"></div>
+ <div id="instructions">
+  <h1>Setko Puzzler 67 </h1>
+  <p>
+    <a href="https://www.reddit.com/r/puzzles/comments/n5npcc/probably_the_crown_jewel_of_my_puzzle_collection/">original post on Reddit</a>
+    |
+    <a href="https://github.com/maksverver/setko-puzzler-67">source code on GitHub</a> 
+  </p>
+  <div>
+    <button disabled id="resetButton">Reset</button>
+    <button disabled id="undoButton">Undo</button>
+    <button disabled id="redoButton">Redo</button>
+    <label><input id="showSolutionCheckbox" type="checkbox"> Show solution</label>
+  </div>
+  <h2>To set up the board</h2>
+  <p>Place a peg in each hole on the board.</p>
+  <h2>Object of the puzzle</h2>
+  <p>To remove pegs from the board by jumping one peg over another,
+     removing the peg as it is jumped. Moves can be made in diagonal,
+     vertical or horizontal directions.</p>
+  <h2>To start</h2>
+  <p>Remove any one peg. The first move is to jump a peg into the vacant
+     hole. Remove the jumped peg and continue.</p>
+  <h2>To win</h2>
+  <p>Remove all the pegs by jumping except for one which must end up in
+     the circled hole.</p>
+  </p>
+ <script src="index.js"></script>
+</body>
+</html>
+
