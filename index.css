@@ -23,6 +23,12 @@ h2 {
   padding: 1em;
 }
 
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 #grid {
   flex: 0 0;
   padding: 1em;
@@ -36,6 +42,7 @@ h2 {
 #grid .cell {
   border-radius: 50%;
   user-select: none;
+  cursor: pointer;
 }
 
 #grid .goal {
