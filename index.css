@@ -53,20 +53,18 @@ h2 {
 #grid .cell.peg {
   background-color: #fc0;
   background: radial-gradient(farthest-corner at 20% 20%, #fe8, #fc0);
-  cursor: pointer;
 }
 
-#grid .cell.peg.dragged {
-  opacity: 75%;
+#grid .cell.peg.selected {
+  border: 4px solid #28f /*#0e0*/;
 }
 
-#grid .cell.hole.droppable {
-  background: #fc06;
-  border-color: #fc0;
+#grid .cell.hole.target {
+  border: 4px solid #14e /*#0a0*/;
 }
 
 #grid .cell.hint {
-  border: 3px solid magenta !important;
+  border: 4px solid magenta !important;
 }
 
 a {
